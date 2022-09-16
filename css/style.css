@@ -1,0 +1,27 @@
+
+@import 'vars.css';
+
+body {
+	background-color: black;
+	margin: 0;
+	font-family: sans-serif;
+	letter-spacing: -0.1ch;
+	line-height: 1;
+	/* overlay set's the scroll-bar to show above the content */
+	overflow: overlay; 
+}
+
+body::-webkit-scrollbar-track {
+	background: linear-gradient(to bottom, transparent, var(--scrollbar-color) 1px) no-repeat center/1px 90%;
+}
+
+body::-webkit-scrollbar{
+	width: 100px;
+	height: 100%;
+}
+
+/* custom tag to hide elements for me abeg */
+[hidden] {
+	display: none;
+}
+
